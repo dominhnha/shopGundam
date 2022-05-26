@@ -1,0 +1,19 @@
+@import "./_reset";
+@import "./_variable";
+@import "./_grid";
+@import "./_base";
+@import "./_siderbar";
+@import "./_header";
+@import "./_slider";
+@import "./__sort-bar";
+@import "./__home-shop";
+.app{
+
+    .siderbar{
+        z-index: 2;
+    
+    }
+    .home_content{
+        overflow-y: auto;
+    }
+}

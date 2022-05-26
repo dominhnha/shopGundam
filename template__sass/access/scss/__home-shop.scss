@@ -1,0 +1,105 @@
+.home__shop{
+    .home__shop-row{
+        margin: 20px;
+    }
+    .home__shop-cand{
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        margin: 5px;
+        overflow: hidden;
+        box-shadow: 0 3px 2.125rem 0 rgb(0 0 0 / 10%);
+        text-align: center;
+        &:hover{
+            transition: all 0.4s ease;
+            box-shadow: 0 2px 4.125rem 0 rgb(0 0 0 / 30%);
+        }
+        cursor: pointer;
+        & .cand-img{
+            padding-top:90%;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        & .cand__body{
+            padding: 10px 20px;
+            font-size: 13px;
+            & .cand__body-title{
+                text-align: left;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 10px 0;
+                display: flex;
+                justify-content: space-between;
+                & .cand__body-title-waper{
+
+                }
+
+                & .cand__body-id{
+                    font-size: 12px;
+                    color: rgb(168, 157, 157);
+                }
+            }
+            
+            & .cand__body-waper{
+                display: flex;
+                justify-content: space-between;
+                & .cand__body-price{
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    font-weight:400 ;
+                    color: #ee4d2d;
+                    & i{
+                        font-size: 20px;
+                        padding: 0 5px;
+                        color: #ee4d2d;
+                    }
+                }
+                & .cand__body-sale{
+                    display: flex;
+                    align-items: center;
+                    color: rgb(58, 58, 58);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+
+                }
+            }
+        }
+
+        .cand__footer{
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .cand__footer-icon{
+                font-size: 18px;
+                color: red;
+                
+            }
+        }
+        // min-height: 300px;
+        & .btn{
+            width: 132px;
+            min-height: 30px;
+            border-radius: 8px;
+            background-color: #fff;
+            font-size: 15px;
+            font-weight: 400;
+            margin: 5px 0;
+            cursor: pointer;
+            &:hover{
+                 transition: all 0.5s ease;
+                 background-color:#11101d ;
+                 color: #fff;
+
+            }
+        }
+       & .cand__button{
+           display: flex;
+           justify-content: center;
+           
+       }
+    }
+}

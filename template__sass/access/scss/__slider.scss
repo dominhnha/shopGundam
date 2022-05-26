@@ -1,0 +1,112 @@
+.slider {
+    position: relative;
+    max-width: 100%;
+    max-height: 70vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    & .slider-dots{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      z-index: 10;
+      & li{
+        margin: 0 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100rem;
+        background-color: #999;
+        cursor: pointer;
+         transition: background-color 0.25s linear;
+      }
+
+    }
+
+    & .slider__icon-left,
+     .slider__icon-right {
+      display: block;
+      position:absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      z-index: 99;
+      color: black;
+      width: 35px;
+      height: 35px;
+      border-radius: 30%;
+      background-color: rgba($color: #e4e4e4, $alpha: 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      
+      &:hover{
+        transition: all 0.2s ease;
+        width: 40px;
+        height: 40px;
+       
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        color: #e4e4e4;
+      }
+    }
+    & .slider__icon-left{
+      left: 20px;
+    }
+    & .slider__icon-right{
+      right: 20px;
+      font-size: 20px;
+    }
+
+    & .slider__wapper{
+      width: 100%;
+      height: 100%;
+      min-height: 70vh;
+      overflow: hidden;
+      position: relative;
+
+        & .slider__main{
+            display: flex;
+            position: relative;
+            transition: transform 0.25s linear;
+            height: 100%;
+
+            & .slider__item{
+              height: 100%;
+              width: 100%;
+              flex: 1 0 100%;
+              user-select: none;
+
+              & img{
+                
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                min-height: 70vh;
+                
+                
+              }
+              // & .slider__item-img{
+              //       position: relative;
+              //       display: block;
+              //       width: 100%;
+              //       height: 70vh;
+                    
+              //       background-position:  center top;
+              //       background-size: cover;
+              //       background-repeat: no-repeat;
+                    
+
+              // }
+            }
+              
+        }
+
+
+    }
+}
+  

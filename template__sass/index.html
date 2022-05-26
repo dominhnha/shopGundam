@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./access/css/style.css">
+    <!-- boxi icon CND link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>New Feed</title>
+</head>
+<body>
+    <div class="app">
+        <div class="siderbar  " >
+            <div class="logo_content" >
+                <a class="logo" href="./index.html">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <div class="logo_name">Gundam</div>
+                </a>
+                <i class='bx bx-menu' id="btn" ></i>
+                
+            </div>
+            <ul class="nav_list">
+                 <li class="nav_item">
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">search</span>
+                     <!-- <span class="links_name">Dashboard</span> -->
+                 </li>   
+                 <li class="nav_item">
+                    <a href="" class="nav_link">
+                       <i class='bx bx-grid-alt' ></i>
+                       <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>   
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <i class='bx bx-user' ></i>
+                       <span class="links_name">User</span>
+                    </a>
+                    <span class="tooltip">User</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <i class='bx bx-chat' ></i>
+                       <span class="links_name">Messages</span>
+                    </a>
+                    <span class="tooltip">Messages</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>   
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <i class='bx bx-pie-chart-alt' ></i>
+                       <span class="links_name">Analytic</span>
+                    </a>
+                    <span class="tooltip">Analytic</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>   
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <i class='bx bx-folder' ></i>
+                       <span class="links_name">File Manager</span>
+                    </a>
+                    <span class="tooltip">File Manager</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>   
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <i class='bx bx-cart' ></i>
+                       <span class="links_name">Oder</span>
+                    </a>
+                    <span class="tooltip">Oder</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>   
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <i class='bx bx-heart' ></i>
+                       <span class="links_name">Save</span>
+                    </a>
+                    <span class="tooltip">Save</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>   
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                    <i class='bx bx-cog' ></i>
+                       <span class="links_name">Setting</span>
+                    </a>
+                    <span class="tooltip">Setting</span>
+                    <!-- <span class="links_name">Dashboard</span> -->
+                </li>    
+            </ul>
+            <div class="profile_content ">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="./access/img/USER__ART.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Minh Nhat</div>
+                            <div class="job">Web development</div>
+                        </div>
+                        <i class='bx bx-log-out' id="log_out"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home_content ">
+            <header class="header">
+                <div class="header__left">
+                    <div class="Brouse">
+                        <i class='bx bx-briefcase-alt-2'></i>
+                        <span>Browse</span>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+                
+                <div class="header__right">
+                    <div class="header__selection-fuction">
+                        <i class='bx bx-add-to-queue' ></i>
+                    </div>
+                    <div class="header__notification">
+                        <i class='bx bx-bell' ></i>
+                        <div class="quantity">3</div>
+                        <ul class="list__notification">
+                            <div class="list__notification-header">List Shop</div>
+                            <div class="list__notification-waper">
+                                <li class="list__notification-item">
+                                    <img src="../img/backgroud2.jpg" alt="" class="item-img">
+                                    <div class="item-body">
+                                        <div class="item-id"># <span>1</span> </div>
+                                        <div class="item-name">Gundam 2xx</div>
+                                        <div class="item-price"> <span>40000000</span> $ </div>
+                                    </div>
+                                </li>
+                                <li class="list__notification-item">
+                                    <img src="../img/backgroud2.jpg" alt="" class="item-img">
+                                    <div class="item-body">
+                                        <div class="item-id"># <span>1</span> </div>
+                                        <div class="item-name">Gundam 2xx</div>
+                                        <div class="item-price"> <span>40000000</span> $ </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="list__notification-view">view list</div>     
+                        </ul>
+                    </div>
+                    <div class="header__user">
+                        <img src="./access/img/USER__ART.png" alt="">
+                    </div>
+                    
+                </div>
+            </header>
+            <div class="slider" onresize="checkresize()">
+                <i class='slider__icon-left bx bxs-chevrons-left' onclick="console.log(`s`)"></i>
+                <ul class="slider-dots">
+                    <li class="slider-dot-item active__BG" data-index="0"></li>
+                    <li class="slider-dot-item" data-index="1"></li>
+                    <li class="slider-dot-item" data-index="2"></li>
+                    <li class="slider-dot-item" data-index="3"></li>
+                    <li class="slider-dot-item" data-index="4"></li>
+                  </ul>
+                <div class="slider__wapper">
+                      
+                    <div class="slider__main">
+                        <div class="slider__item">
+                            <img src="/access/img/Gundam2.jpg" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="/access/img/valorant.jpg" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="/access/img/Gundam1.jpg" alt="">
+                        </div> 
+                        <div class="slider__item">
+                            <img src="/access/img/Gundam3.jpg" alt="">
+                        </div> 
+                        <div class="slider__item">
+                            <img src="/access/img/LOLbanner.jpg" alt="">
+                        </div>   
+                        <!-- <div class="slider__item">
+                            <img src="/access/img/BGR1.jpg" alt="">
+                        </div> 
+                         <div class="slider__item">
+                            <div class="slider__item-img" style="background-image: url(./access/img/LOLbanner.jpg);"></div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-img" style="background-image: url(./access/img/BACKGROD1.jpg);"></div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-img" style="background-image: url(./access/img/valorant.jpg);"></div>
+                        </div> -->
+                    </div>
+                </div>
+                <i class='slider__icon-right bx bxs-chevrons-right'></i>
+                
+            </div>
+            <div class="home__body grid wide" >
+                <div class="home__sort-bar row">
+                    <span class="home__sort-bar-title">Sort item by</span>
+                    <div class="home__sort-bar-best-sale bar__active">Common</div>
+                    <div class="home__sort-bar-best-sale">Best sale</div>
+                    <div class="home__sort-bar-best-sale">New item</div>
+                    <div id="price" class="home__sort-bar-best-sale">Price</div>
+                </div>
+                <div class="home__shop" id="table">
+                    <div class="home__shop-row row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="home__shop-cand">
+                                <div class="cand-img"  style="background-image: url(./access/img/USER__ART.png);">
+                                </div>
+                                <div class="cand__body">
+                                    <div class="cand__body-title">
+                                        <div class="cand__body-title-waper">
+                                            <i class='bx bxs-home-alt-2'></i>
+                                             Gundam crenter x3
+                                        </div>
+                                        <div class="cand__body-id">#<span class="item-id">9903</span></div>
+                                    </div>
+                                    
+                                    <div class="cand__body-waper">
+    
+                                        <div class="cand__body-price">
+                                            <i class='bx bx-dollar-circle' ></i>
+                                            <span>20000</span>đ
+                                        </div>
+                                        <div class="cand__body-sale">
+                                            <span>best sale</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <button class="btn">Add list</button>
+                            </div>
+                        </div> 
+                                    
+                    </div>
+                    
+                    
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="./access/js/siderbar.js"></script>
+    <script src="./access/js/slider.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>

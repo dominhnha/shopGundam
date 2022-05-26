@@ -1,0 +1,103 @@
+@import "./_reset";
+@import "./_variable";
+@import "./_grid";
+@import "./_base";
+@import "./_siderbar";
+@import "./_header";
+.app{
+
+    .siderbar{
+        z-index: 2;
+    
+    }
+    .home_content{
+        overflow-y: auto;
+    }
+}
+
+.item{
+    display: block;
+    padding:20px;
+    font-size: 13px;
+    color: rgb(90, 83, 83);
+    .item-img{
+        width: 100%;
+        padding-top: 90%;
+        min-height:60vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 4.125rem 0 rgb(0 0 0 / 30%);
+        
+    }
+
+    .item__name{
+        font-size:30px;
+        margin: 20px 0;
+    }
+    .item__price{
+        
+        font-size:20px;
+        color: rgb(218, 94, 94);
+        margin:10px 0;
+    }
+    .item__des{
+        text-align:justify;
+        margin:10px 0;
+        
+    }
+
+    .item__selection{
+        display:flex;
+
+        .item__button{
+            display:flex;
+            align-items:center;
+            font-size:20px;
+            border: none;
+            padding:10px 20px;
+            margin:10px 20px;
+            border-radius:8px;
+            background-color: #11101d;
+            color:white;
+            cursor: pointer;
+            border: 2px #11101d solid;
+            &:hover{
+                transition: all 0.5s ease;
+                background-color: white;
+                color:#11101d;
+                
+            }
+        }
+
+        .item__button-add{
+
+        }
+        .item__button-buy{
+
+        }
+    }
+    .item__contact{
+        margin: 10px;
+        display:flex;
+        flex-direction: column;
+        .item__contact-title{
+            font-size:18px;
+        }
+        .item__contact-list{
+            list-style: none;
+
+            & a{
+                display:block;
+                text-decoration: none;
+                color:#11101d;
+                margin:10px 0;
+                &:hover{
+                    transition:all 0.4s ease;
+                    color:#756e6e;
+                }
+            }
+        }
+    }
+}
