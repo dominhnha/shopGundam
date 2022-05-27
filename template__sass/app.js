@@ -71,7 +71,9 @@ function getInfo(e){
     
     window.location="./access/html/item.html";
 }
-
+function nextpage(){
+    window.location="./access/html/bill.html";
+}
 //-----gio hang --------.//
 
 let listsession = [];
@@ -121,6 +123,18 @@ let price = document.querySelector(`#price`);
 price.addEventListener("click", ()=>{
     Listdata.sort((a,b)=>{
         return  b.price -a.price ;
+    })
+    renderDislay(Listdata);
+    let addButton = document.querySelectorAll(".home__sort-bar-best-sale");
+    addButton.forEach(element=>{
+        element.classList.remove("bar__active");
+    })
+    price.classList.add("bar__active");
+})
+let Common = document.querySelector(`#Common`);
+Common.addEventListener("click",()=>{
+    Listdata.sort((a,b)=>{
+        return  a.price-b.price ;
     })
     renderDislay(Listdata);
     let addButton = document.querySelectorAll(".home__sort-bar-best-sale");

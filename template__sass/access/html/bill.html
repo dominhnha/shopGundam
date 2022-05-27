@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./access/css/style.css">
+    <link rel="stylesheet" href="../css/bill.css">
     <!-- boxi icon CND link -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>New Feed</title>
@@ -13,7 +13,7 @@
     <div class="app">
         <div class="siderbar  " >
             <div class="logo_content" >
-                <a class="logo" href="./index.html">
+                <a class="logo" href="../../index.html">
                     <i class='bx bxl-c-plus-plus'></i>
                     <div class="logo_name">Gundam</div>
                 </a>
@@ -95,7 +95,7 @@
             <div class="profile_content ">
                 <div class="profile">
                     <div class="profile_details">
-                        <img src="./access/img/USER__ART.png" alt="">
+                        <img src="../img/USER__ART.png" alt="">
                         <div class="name_job">
                             <div class="name">Minh Nhat</div>
                             <div class="job">Web development</div>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 
-                <div class="header__right">
+                <div class="header__right ">
                     <div class="header__selection-fuction">
                         <i class='bx bx-add-to-queue' ></i>
                     </div>
@@ -126,113 +126,120 @@
                             <div class="list__notification-header">List Shop</div>
                             <div class="list__notification-waper">
                                 <li class="list__notification-item">
-                                    <img src="./access/img/BGR1.jpg" alt="" class="item-img">
-                                    <div class="item-body">
-                                        <div class="item-id"># <span>0</span> </div>
-                                        <div class="item-name">Không có sản phẩm</div>
-                                        <div class="item-price"> <span>0</span> $ </div>
-                                    </div>
-                                </li>
+                                    <li class="list__notification-item">
+                                        <img src="../img/BGR1.jpg" alt="" class="item-img">
+                                        <div class="item-body">
+                                            <div class="item-id"># <span>0</span> </div>
+                                            <div class="item-name">Không có sản phẩm</div>
+                                            <div class="item-price"> <span>0</span> $ </div>
+                                        </div>
+                                    </li>
                                
                             </div>
+                            <div class="list__notification-view">view list</div>
                             
-                            <div class="list__notification-view" onclick="nextpage()">view list</div>     
                         </ul>
+
                     </div>
                     <div class="header__user">
-                        <img src="./access/img/USER__ART.png" alt="">
+                        <img src="../img/USER__ART.png" alt="" ">
                     </div>
                     
                 </div>
             </header>
-            <div class="slider" onresize="checkresize()">
-                <i class='slider__icon-left bx bxs-chevrons-left' onclick="console.log(`s`)"></i>
-                <ul class="slider-dots">
-                    <li class="slider-dot-item active__BG" data-index="0"></li>
-                    <li class="slider-dot-item" data-index="1"></li>
-                    <li class="slider-dot-item" data-index="2"></li>
-                    <li class="slider-dot-item" data-index="3"></li>
-                    <li class="slider-dot-item" data-index="4"></li>
-                  </ul>
-                <div class="slider__wapper">
-                      
-                    <div class="slider__main">
-                        <div class="slider__item">
-                            <img src="/access/img/Gundam2.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/access/img/valorant.jpg" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/access/img/Gundam1.jpg" alt="">
-                        </div> 
-                        <div class="slider__item">
-                            <img src="/access/img/Gundam3.jpg" alt="">
-                        </div> 
-                        <div class="slider__item">
-                            <img src="/access/img/LOLbanner.jpg" alt="">
-                        </div>   
-                        <!-- <div class="slider__item">
-                            <img src="/access/img/BGR1.jpg" alt="">
-                        </div> 
-                         <div class="slider__item">
-                            <div class="slider__item-img" style="background-image: url(./access/img/LOLbanner.jpg);"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item-img" style="background-image: url(./access/img/BACKGROD1.jpg);"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item-img" style="background-image: url(./access/img/valorant.jpg);"></div>
-                        </div> -->
-                    </div>
-                </div>
-                <i class='slider__icon-right bx bxs-chevrons-right'></i>
-                
-            </div>
-            <div class="home__body grid wide" >
-                <div class="home__sort-bar row">
-                    <span class="home__sort-bar-title">Sort item by</span>
-                    <div id ="Common" class="home__sort-bar-best-sale bar__active">Common</div>
-                    <!-- <div class="home__sort-bar-best-sale">Best sale</div>
-                    <div class="home__sort-bar-best-sale">New item</div> -->
-                    <div id="price" class="home__sort-bar-best-sale">Price</div>
-                </div>
-                <div class="home__shop" id="table">
-                    <div class="home__shop-row row">
-                        <div class="col l-3 m-6 c-12">
-                            <div class="home__shop-cand">
-                                <div class="cand-img"  style="background-image: url(./access/img/USER__ART.png);">
-                                </div>
-                                <div class="cand__body">
-                                    <div class="cand__body-title">
-                                        <div class="cand__body-title-waper">
-                                            <i class='bx bxs-home-alt-2'></i>
-                                             Gundam crenter x3
-                                        </div>
-                                        <div class="cand__body-id">#<span class="item-id">9903</span></div>
-                                    </div>
-                                    
-                                    <div class="cand__body-waper">
-    
-                                        <div class="cand__body-price">
-                                            <i class='bx bx-dollar-circle' ></i>
-                                            <span>20000</span>đ
-                                        </div>
-                                        <div class="cand__body-sale">
-                                            <span>best sale</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <button class="btn">Add list</button>
+            <div class="home__body row" id = "table">
+                <div class="col l-6 m-12 c-12">
+                    <div class="home__body-item">
+                        <form action="" method="POST" class="form" id="form-1">
+                            <h3 class="heading">Thông tin khách hàng</h3>
+                            <div class="form-group">
+                                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                                <input id="fullname" name="fullname" type="text" placeholder="VD: your name" class="form-control">
+                                <span class="form-message"></span>
                             </div>
-                        </div> 
-                                    
+                      
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-label">Địa chỉ</label>
+                                <input id="password" name="address" type="text" placeholder="Address" placeholder="Nhập mật khẩu" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <input id="Repassword" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                                <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                      
+                            <button class="form-submit">Mua hàng</button>
+                        </form>
                     </div>
                     
-                    
+                </div>
+                <div class="col l-6 m-12 c-12">
+                    <div class="home__body-item">
+                        <div class="item__header">Danh mục sản phẩm 
+                            <div class="number-item">0</div>
+                        </div>
+                        <div class="item__waper">
+                            <ul class="list__notification">
+                                <div class="list__notification-waper"  id="itemtable" >
+                                    <li class="list__notification-item">
+                                        <img src="../img/BGR1.jpg" alt="" class="item-img">
+                                        <div class="item-body">
+                                            <div class="item-id"># <span>0</span> </div>
+                                            <div class="item-name">Không có sản phẩm</div>
+                                            <div class="item-price"> <span>0</span> $ </div>
+                                        </div>
+                                        <div class="item__remove" onclick="removeItem()">
+                                            <i class='bx bxs-message-square-x'></i>
+                                        </div>
+                                    </li>
+                                    <li class="list__notification-item">
+                                        <img src="../img/BGR1.jpg" alt="" class="item-img">
+                                        <div class="item-body">
+                                            <div class="item-id"># <span>0</span> </div>
+                                            <div class="item-name">Không có sản phẩm</div>
+                                            <div class="item-price"> <span>0</span> $ </div>
+                                        </div>
+                                        <div class="item__remove">
+                                            <i class='bx bxs-message-square-x'></i>
+                                        </div>
+                                    </li>
+                                    <li class="list__notification-item">
+                                        <img src="../img/BGR1.jpg" alt="" class="item-img">
+                                        <div class="item-body">
+                                            <div class="item-id"># <span>0</span> </div>
+                                            <div class="item-name">Không có sản phẩm</div>
+                                            <div class="item-price"> <span>0</span> $ </div>
+                                        </div>
+                                        <div class="item__remove">
+                                            <i class='bx bxs-message-square-x'></i>
+                                        </div>
+                                    </li>
+                                        
+                                   
+                                </div>          
+                            </ul>
+                        </div>
+                        <div class="item__price">Price: <span id = "price">0</span>$</div>
+                    </div>
                 </div>
             </div>
-            <div class="footer">
+
+            
+            <!-- <div class="footer">
                 <div class="row">
                     <div class="col l-6 m-6 c-6">
                         <ul class="footer__list">
@@ -255,13 +262,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-       
     </div>
-    <script src="./access/js/siderbar.js"></script>
-    <script src="./access/js/slider.js"></script>
-    <script src="./app.js"></script>
-     
+    <script src="../js/siderbar.js"></script>
+    <script src="../js/bill.js"></script>
 </body>
 </html>

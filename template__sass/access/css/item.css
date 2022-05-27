@@ -1065,6 +1065,29 @@ body {
   border-radius: 50%;
 }
 
+.footer {
+  display: block;
+  min-height: 50px;
+  background-color: #11101d;
+  color: white;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__list .footer__list-header {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  padding: 20px;
+}
+.footer .footer__list .footer__item {
+  font-size: 12px;
+  margin: 5px;
+}
+
 .app .siderbar {
   z-index: 2;
 }

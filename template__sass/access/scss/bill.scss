@@ -1,0 +1,138 @@
+@import "./_reset";
+@import "./_variable";
+@import "./_grid";
+@import "./_base";
+@import "./_siderbar";
+@import "./_header";
+@import "./_footer";
+.app{
+    .home_content{
+        .home__body-item{
+            display: block;
+            align-items: center;
+            padding: 10px;
+            .form{
+                display: block;
+                max-width: 350px;
+                margin: 0 auto;
+                .heading{
+                    font-size:23px;
+                    color:#11101d;
+                    font-weight: bold;
+                    padding:10px 0;
+                    text-align: center;
+                }
+                .form-group{
+                    display: flex;
+                    align-items: center; 
+                    margin: 5px;
+                    .form-label{
+                        min-width:100px;
+                    }
+                    .form-control{
+                        border: 1px solid black;
+                        border-radius:8px;
+                        padding: 10px;
+                        min-width: 190px;
+                        
+                        margin:5px;
+                    }
+                    .form-message{
+
+                    }
+                }
+                .form-submit{
+                    display: block;
+                    margin:20px auto;
+                    text-align: center;
+                     border: 1px solid black;
+                     background-color: #11101d;
+                     color:#fff;
+                     padding: 10px 20px;
+                     border-radius: 8px;
+                }
+            }
+
+            .item__header{
+                position: relative;
+                font-size:23px;
+                color:#11101d;
+                font-weight: bold;
+                padding:10px 0;
+                text-align: center;
+                & .number-item{
+                    position:absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform:translateY(-50%);
+                    display:flex;
+                    width: 20px;
+                    height:20px;
+                    justify-content:center;
+                    align-items: center;
+                    background-color: #11101d;
+                    color:#fff;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    
+
+
+                }
+            }
+            .item__waper{
+                padding:10px;
+                .list__notification{
+                    border:3px solid black;
+                    border-radius:8px;
+                    .list__notification-waper{
+                        max-height: 60vh;
+                        overflow-y: auto;
+                        .list__notification-item{
+                            display:flex;
+                            
+                            & img{
+                                max-width:200px;
+                                max-height: 100px;
+                                width: 80px;
+                                object-fit: cover;
+                                border-radius: 10px;
+                                margin:10px;
+                            }
+                            & .item-body{
+                                color:rgb(76, 76, 76);
+                                font-size:15px;
+                                & .item-name{
+                                    font-size:23px;
+
+                                }
+                            }
+                            & .item__remove{
+                                display:flex;
+                                min-height:50px;
+                                font-size:20px;
+                                color:#11101d;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                               padding: 10px;
+                                margin-left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .item__price{
+               display:flex;
+               justify-content: center;
+               align-items: center;
+                width: 100%;
+                height:50px;
+                border-radius:8px;
+                background-color: #11101d;
+                color:#fff;
+                font-size:15px;
+             }
+        
+        }
+    }
+}

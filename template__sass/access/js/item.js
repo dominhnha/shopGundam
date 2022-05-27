@@ -12,7 +12,9 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
-
+function nextPage(){
+    window.location="./access/html/bill.html";
+}
 readTextFile("../../database/listGundam.json", function(text){
 
     let database = JSON.parse(text);
@@ -41,7 +43,7 @@ readTextFile("../../database/listGundam.json", function(text){
                 <i class='bx bx-cart-add' ></i>
                 Add list
             </button>
-            <button class="item__button item__button-buy">
+            <button class="item__button item__button-buy" onclick="nextpage()">
                 <i class='bx bxs-dollar-circle' ></i>
                 Buy Now
             </button>
@@ -118,7 +120,10 @@ function additem(){
     displayByShop(listsession);
     sessionStorage.setItem("ListItem",JSON.stringify(listsession));
 }
-
+//-------------chuyen trang-------------------//
+function nextpage(){
+    window.location="../html/bill.html";
+}
 
 
 

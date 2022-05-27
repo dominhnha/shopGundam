@@ -1,0 +1,24 @@
+.footer{
+    display: block;
+    min-height: 50px;
+    background-color: #11101d;
+    color: white;
+    .footer__list{
+        
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .footer__list-header{
+            font-size: 25px;
+            font-weight:400;
+            text-align: justify;
+            padding:20px;   
+        }
+        & .footer__item{
+            font-size:12px;
+            margin: 5px;
+        }
+    }
+}
